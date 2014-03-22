@@ -3,4 +3,4 @@ LegalObjects
 
 Legal Contract Project
 
-This is an experiment to create a structured language for legal documents. I will be strating with certain capital markets agreements as these are the ones I know best.
+This is an experiment to create a structured language for legal documents. I will start with certain capital markets documents as I know these best and as there would be ample scope for productivity improvements would such a language exist.
