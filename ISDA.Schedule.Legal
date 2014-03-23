@@ -1,0 +1,26 @@
+Type=Agreement.Master;
+
+ISDA.Master.Year=2002;
+
+Agreement.Law = ""
+Agreement.Law.Construed = ""
+
+Date.Effective = YYYY/MM/DD
+Date.Signing = YYYY/MM/DD
+
+Party.Name.A = ""
+Party.Name.B = ""
+
+Party.LEI.A = ""
+Party.LEI.B = ""
+
+
+
+
+
+
+
+
+
+
+
