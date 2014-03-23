@@ -1,3 +1,6 @@
+
+import java.util.Date;
+
 class Agreement { 
   String version;           // Version of Agreement 
   String author;            // Author of Agreement
@@ -13,7 +16,7 @@ class Agreement {
   String warranties;
   String covenants;
   String termination;
-  String default;
+  String defaultevent;
   String close_out;
   String misc;
   String law;
