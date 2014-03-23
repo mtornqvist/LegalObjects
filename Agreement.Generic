@@ -1,0 +1,5 @@
+class Agreement { 
+  string.Version = "0.1"
+  string.Author = ""
+  string.Body =""}
+  
