@@ -32,7 +32,3 @@ public class Main {
       String[] Schedule[];
   
   }}
-
-  
-
-  }}
