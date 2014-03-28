@@ -32,7 +32,7 @@ class Agreement {
     
 public class Main {
     public static void main(String[] args) {
-        Agreemnt A = new Agreement ();
-        String S = Agreement.preamble;
-        System.out.println(S);}
+        Agreement a = new Agreement ();
+        String s = a.preamble;
+        System.out.println(s);}
 }
