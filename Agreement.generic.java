@@ -26,11 +26,11 @@ class Agreement.generic {
   
     public String[] Schedule[];
     
-    {return 0;}
-  
+    public Agreement.Generic (){};
 }
     
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Agreement.generic);}
+        A = new Agreement.generic();
+        System.out.println(A);}
 }
