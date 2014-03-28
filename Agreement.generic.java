@@ -38,7 +38,7 @@ class Paragraph {
     public void Paragraph () {
         this.number = number;
         this.heading = heading;
-        this.langauge = language;
+        this.language = language;
     };
 }
     
