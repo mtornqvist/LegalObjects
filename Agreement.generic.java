@@ -35,7 +35,11 @@ class Paragraph {
     public String heading;
     public String language;
     
-    public void Paragraph () {};
+    public void Paragraph () {
+        this.number = number;
+        this.heading = heading;
+        this.langauge = language;
+    };
 }
     
 public class Main {
