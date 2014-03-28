@@ -1,7 +1,6 @@
 import java.util.Date;
 
 class Agreement { 
-
     public String version;           // Version of Agreement 
     public String author;            // Author of Agreement
     public Date signingDate;         // Date of Signing
@@ -26,9 +25,18 @@ class Agreement {
   
     public String[] Schedule[];
     
-    public Agreement (){
+    public void Agreement (){
         this.preamble = preamble;};
 }
+    
+
+Class Paragraph {
+    public int number;
+    public String langauge;
+    
+    public void Agreement () {
+    }
+}    
     
 public class Main {
     public static void main(String[] args) {
