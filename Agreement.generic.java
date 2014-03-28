@@ -29,14 +29,12 @@ class Agreement {
         this.preamble = preamble;};
 }
     
-
-Class Paragraph {
+class Paragraph {
     public int number;
-    public String langauge;
+    public String language;
     
-    public void Agreement () {
-    }
-}    
+    public void Paragraph () {};
+}
     
 public class Main {
     public static void main(String[] args) {
