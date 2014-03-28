@@ -1,6 +1,6 @@
 import java.util.Date;
 
-class Agreement.generic { 
+class Agreement { 
 
     public String version;           // Version of Agreement 
     public String author;            // Author of Agreement
@@ -26,11 +26,13 @@ class Agreement.generic {
   
     public String[] Schedule[];
     
-    public Agreement.Generic (){};
+    public Agreement (){
+        this.preamble = preamble;};
 }
     
 public class Main {
     public static void main(String[] args) {
-        A = new Agreement.generic();
-        System.out.println(A);}
+        Agreemnt A = new Agreement ();
+        String S = Agreement.preamble;
+        System.out.println(S);}
 }
