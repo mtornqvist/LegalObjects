@@ -9,7 +9,7 @@ class Agreement {
     public String[] parties[];       // Parties to the Agreement  
   
     public String preamble = "TEST";
-    public String conventions;
+    public Paragraph conventions;
     public String agreements;
     public String representations;
     public String warranties;
