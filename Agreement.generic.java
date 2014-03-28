@@ -26,11 +26,13 @@ class Agreement {
     public String[] Schedule[];
     
     public void Agreement (){
-        this.preamble = preamble;};
+        this.preamble = preamble;
+        this.conventions = conventions;};
 }
     
 class Paragraph {
     public int number;
+    public String heading;
     public String language;
     
     public void Paragraph () {};
