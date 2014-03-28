@@ -27,7 +27,7 @@ class Agreement {
     
     public void Agreement (){
         this.preamble = preamble;
-        this.conventions = conventions;};
+        this.conventions = conventions;}
 }
     
 class Paragraph {
@@ -39,7 +39,7 @@ class Paragraph {
         this.number = number;
         this.heading = heading;
         this.language = language;
-    };
+    }
 }
     
 public class Main {
