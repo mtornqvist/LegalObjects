@@ -9,7 +9,7 @@ class Agreement {
     public String[] parties[];       // Parties to the Agreement  
   
     public String preamble = "TEST";
-    public Paragraph conventions;
+    public Section conventions;
     public String agreements;
     public String representations;
     public String warranties;
@@ -29,20 +29,28 @@ class Agreement {
         this.preamble = preamble;
         this.conventions = conventions;}
 }
+  
+class Section {
+    public int number;
+    public String heading;
+    
+    public void Section () {
+        this.number = number;
+        this.heading = heading;
+    }
+}
     
 class Paragraph {
     public int number;
-    public String heading;
     public String language;
     
     public void Paragraph () {
         this.number = number;
-        this.heading = heading;
         this.language = language;
     }
 }
     
-public class Main {
+public class LegalObjects {
     public static void main(String[] args) {
         Agreement a = new Agreement ();
         String s = a.preamble;
