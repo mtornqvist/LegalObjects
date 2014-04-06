@@ -1,58 +1,74 @@
 import java.util.Date;
+import java.util.Scanner;
 
 class Agreement { 
-    public String version;           // Version of Agreement 
-    public String author;            // Author of Agreement
-    public Date signingDate;         // Date of Signing
-    public Date effectiveDate;       // Date Agreement is Effective
+    int i;
+    String name;                // Name of Agreement
+    String version;             // Version of Agreement 
+    String author;              // Author of Agreement
+    Date signingDate;           // Date of Signing
+    Date effectiveDate;         // Date Agreement is Effective
   
-    public String[] parties[];       // Parties to the Agreement  
+    String parties[];           // Parties to the Agreement  
   
-    public String preamble = "TEST";
-    public Section conventions;
-    public String agreements;
-    public String representations;
-    public String warranties;
-    public String covenants;
-    public String termination;
-    public String defaultevent;
-    public String close_out;
-    public String misc;
-    public String law;
-    public String courts;
-  
-    public String[] signatures[];
-  
-    public String[] Schedule[];
+    String sections[];
+    Section s[] = new Section[20];
     
-    public void Agreement (){
-        this.preamble = preamble;
-        this.conventions = conventions;}
-}
-  
-class Section {
-    public int number;
-    public String heading;
+    String[] signatures[];
+    String[] schedule[];
     
-    public void Section () {
-        this.number = number;
-        this.heading = heading;
+    Agreement (String n, String v, String sections[]){
+        int i;
+        name = n;
+        version = v;
+                      
+        for (i = 0; i < sections.length; i++)
+            s[i] = new Section(sections[i]);
     }
 }
+
+ class Section {
+    static int number = 0;
+    String heading;
     
-class Paragraph {
-    public int number;
-    public String language;
-    
-    public void Paragraph () {
-        this.number = number;
-        this.language = language;
+    Section () {
+        number++;
+    }
+        
+    Section (String h) {
+        number++;
+        heading = h;
     }
 }
+
+ class Paragraph {
+    static int number = 0;
+    String language;
     
-public class LegalObjects {
+    Paragraph () {
+        number++;
+        language = "bbbb";
+    }
+}
+
+class LegalObjects {
+    private final static Scanner scanner = new Scanner(System.in);    
+    
     public static void main(String[] args) {
-        Agreement a = new Agreement ();
-        String s = a.preamble;
-        System.out.println(s);}
+        int i;
+        String sections[] = {"Preamble", "Agreements", "Representations", "Warranties", "Covenants", "Termination", "Events of default", "Close out", "Misc", "Law", "Courts"}; 
+                
+        System.out.print( "Type the name of the Agreement: " );
+        String input = scanner.nextLine();
+        Agreement a = new Agreement(input, "01", sections);
+        
+        System.out.println(a.name);
+        System.out.println(a.version);
+        
+        for (i=0; i < sections.length; i++)
+        System.out.println(a.s[i].heading);
+        
+        System.out.println(Section.number);
+        System.out.println(Paragraph.number);
+    }
 }
